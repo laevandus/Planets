@@ -15,6 +15,10 @@
 		C881D76C209AEF16001D7B6D /* PlanetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C881D76A209AEF16001D7B6D /* PlanetTableViewController.swift */; };
 		C881D76D209AEF16001D7B6D /* PlanetTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C881D76B209AEF16001D7B6D /* PlanetTableViewController.xib */; };
 		C881D770209AEF96001D7B6D /* PlanetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C881D76F209AEF96001D7B6D /* PlanetManager.swift */; };
+		C881D778209AF867001D7B6D /* DetailedPlanetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C881D776209AF867001D7B6D /* DetailedPlanetViewController.swift */; };
+		C881D779209AF867001D7B6D /* DetailedPlanetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C881D777209AF867001D7B6D /* DetailedPlanetViewController.xib */; };
+		C881D77B209AF96D001D7B6D /* ScenePresenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C881D77A209AF96D001D7B6D /* ScenePresenting.swift */; };
+		C881D77D209AFAE1001D7B6D /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C881D77C209AFAE1001D7B6D /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		C881D76A209AEF16001D7B6D /* PlanetTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetTableViewController.swift; sourceTree = "<group>"; };
 		C881D76B209AEF16001D7B6D /* PlanetTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanetTableViewController.xib; sourceTree = "<group>"; };
 		C881D76F209AEF96001D7B6D /* PlanetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetManager.swift; sourceTree = "<group>"; };
+		C881D776209AF867001D7B6D /* DetailedPlanetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedPlanetViewController.swift; sourceTree = "<group>"; };
+		C881D777209AF867001D7B6D /* DetailedPlanetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailedPlanetViewController.xib; sourceTree = "<group>"; };
+		C881D77A209AF96D001D7B6D /* ScenePresenting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenePresenting.swift; sourceTree = "<group>"; };
+		C881D77C209AFAE1001D7B6D /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +70,13 @@
 			children = (
 				C881D74F209AE7EB001D7B6D /* AppDelegate.swift */,
 				C881D761209AEAB9001D7B6D /* SceneManager.swift */,
+				C881D77A209AF96D001D7B6D /* ScenePresenting.swift */,
 				C881D753209AE7EB001D7B6D /* Main.storyboard */,
 				C881D756209AE7EC001D7B6D /* Assets.xcassets */,
 				C881D758209AE7EC001D7B6D /* LaunchScreen.storyboard */,
 				C881D75B209AE7EC001D7B6D /* Info.plist */,
 				C881D76E209AEF56001D7B6D /* Data */,
+				C881D775209AF838001D7B6D /* DetailedInfo */,
 				C881D769209AEEDD001D7B6D /* List */,
 			);
 			path = Planets;
@@ -87,6 +97,16 @@
 				C881D76F209AEF96001D7B6D /* PlanetManager.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		C881D775209AF838001D7B6D /* DetailedInfo */ = {
+			isa = PBXGroup;
+			children = (
+				C881D776209AF867001D7B6D /* DetailedPlanetViewController.swift */,
+				C881D777209AF867001D7B6D /* DetailedPlanetViewController.xib */,
+				C881D77C209AFAE1001D7B6D /* WebViewController.swift */,
+			);
+			path = DetailedInfo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +170,7 @@
 				C881D75A209AE7EC001D7B6D /* LaunchScreen.storyboard in Resources */,
 				C881D76D209AEF16001D7B6D /* PlanetTableViewController.xib in Resources */,
 				C881D757209AE7EC001D7B6D /* Assets.xcassets in Resources */,
+				C881D779209AF867001D7B6D /* DetailedPlanetViewController.xib in Resources */,
 				C881D755209AE7EB001D7B6D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,6 +184,9 @@
 			files = (
 				C881D76C209AEF16001D7B6D /* PlanetTableViewController.swift in Sources */,
 				C881D770209AEF96001D7B6D /* PlanetManager.swift in Sources */,
+				C881D778209AF867001D7B6D /* DetailedPlanetViewController.swift in Sources */,
+				C881D77B209AF96D001D7B6D /* ScenePresenting.swift in Sources */,
+				C881D77D209AFAE1001D7B6D /* WebViewController.swift in Sources */,
 				C881D762209AEAB9001D7B6D /* SceneManager.swift in Sources */,
 				C881D750209AE7EB001D7B6D /* AppDelegate.swift in Sources */,
 			);

@@ -49,5 +49,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Web View Controller-->
+        <scene sceneID="txK-QM-lTJ">
+            <objects>
+                <viewController storyboardIdentifier="webview" id="hta-Ku-V2P" customClass="WebViewController" customModule="Planets" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="av3-SO-PTU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CbH-hh-iql">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DDF-2f-bDY">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
+                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <wkWebViewConfiguration key="configuration">
+                                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                            <wkPreferences key="preferences"/>
+                                        </wkWebViewConfiguration>
+                                    </wkWebView>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3C-iE-PtR">
+                                        <rect key="frame" x="0.0" y="617" width="375" height="30"/>
+                                        <state key="normal" title="Go to List"/>
+                                        <connections>
+                                            <action selector="goToList:" destination="hta-Ku-V2P" eventType="touchUpInside" id="3s8-Rk-IOJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CbH-hh-iql" firstAttribute="top" secondItem="nL2-fL-Mkb" secondAttribute="top" id="5JP-cS-Mh1"/>
+                            <constraint firstItem="nL2-fL-Mkb" firstAttribute="bottom" secondItem="CbH-hh-iql" secondAttribute="bottom" id="6LV-Qg-ZCp"/>
+                            <constraint firstItem="CbH-hh-iql" firstAttribute="leading" secondItem="nL2-fL-Mkb" secondAttribute="leading" id="QFL-sF-MKe"/>
+                            <constraint firstItem="nL2-fL-Mkb" firstAttribute="trailing" secondItem="CbH-hh-iql" secondAttribute="trailing" id="V1S-UK-WyL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nL2-fL-Mkb"/>
+                    </view>
+                    <connections>
+                        <outlet property="view" destination="av3-SO-PTU" id="6TQ-Gq-aKa"/>
+                        <outlet property="webView" destination="DDF-2f-bDY" id="5fT-4o-rJW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xbj-r3-BPW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="670" y="766"/>
+        </scene>
     </scenes>
 </document>

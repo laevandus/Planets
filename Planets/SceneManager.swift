@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class SceneManager: UIResponder {
+final class SceneManager: UIResponder, ScenePresenting {
     
     // MARK: Creating the Scene Manager
     
@@ -31,6 +31,20 @@ final class SceneManager: UIResponder {
         let listViewController = PlanetTableViewController(planets: planets)
         let navigationController = UINavigationController(rootViewController: listViewController)
         window.rootViewController = navigationController
+    }
+    
+    func presentURL(_ url: URL) {
+        let storyboard = UIStoryboard(name: "Main", bundle: .main)
+        guard let viewController = storyboard.instantiateViewController(withIdentifier: "webview") as? WebViewController else { fatalError() }
+        window.rootViewController?.dismiss(animated: true, completion: nil)
+        window.rootViewController?.present(viewController, animated: true, completion: nil)
+        viewController.load(url)
+    }
+    
+    func presentDetailedInfo(for planet: Planet) {
+        let viewController = DetailedPlanetViewController(planet: planet)
+        guard let navigationController = window.rootViewController as? UINavigationController else { fatalError() }
+        navigationController.pushViewController(viewController, animated: true)
     }
 }
 

@@ -53,7 +53,6 @@ final class PlanetTableViewController: UITableViewController {
     // MARK: Table View Delegate
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let planet = planets[indexPath.row]
-        print(planet)
+        scenePresenter?.presentDetailedInfo(for: planets[indexPath.row])
     }
 }
