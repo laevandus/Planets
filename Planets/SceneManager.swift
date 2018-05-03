@@ -10,7 +10,7 @@ import UIKit
 
 final class SceneManager: UIResponder {
     
-    // MARK: Creating Scene Manager
+    // MARK: Creating the Scene Manager
     
     let window: UIWindow
     
@@ -19,9 +19,21 @@ final class SceneManager: UIResponder {
     }
     
     
+    // MARK: Managing the Dependencies
+    
+    private let dependencies = DependencyStore()
+    
+    
     // MARK: Presenting Scenes
     
     @IBAction func presentPlanetList() {
-        print("Present planet list.")
+        let planets = dependencies.planetManager.planets
+        let listViewController = PlanetTableViewController(planets: planets)
+        let navigationController = UINavigationController(rootViewController: listViewController)
+        window.rootViewController = navigationController
     }
+}
+
+fileprivate final class DependencyStore {
+    lazy var planetManager = PlanetManager()
 }

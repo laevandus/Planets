@@ -12,6 +12,9 @@
 		C881D757209AE7EC001D7B6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C881D756209AE7EC001D7B6D /* Assets.xcassets */; };
 		C881D75A209AE7EC001D7B6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C881D758209AE7EC001D7B6D /* LaunchScreen.storyboard */; };
 		C881D762209AEAB9001D7B6D /* SceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C881D761209AEAB9001D7B6D /* SceneManager.swift */; };
+		C881D76C209AEF16001D7B6D /* PlanetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C881D76A209AEF16001D7B6D /* PlanetTableViewController.swift */; };
+		C881D76D209AEF16001D7B6D /* PlanetTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C881D76B209AEF16001D7B6D /* PlanetTableViewController.xib */; };
+		C881D770209AEF96001D7B6D /* PlanetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C881D76F209AEF96001D7B6D /* PlanetManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		C881D759209AE7EC001D7B6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C881D75B209AE7EC001D7B6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C881D761209AEAB9001D7B6D /* SceneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneManager.swift; sourceTree = "<group>"; };
+		C881D76A209AEF16001D7B6D /* PlanetTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetTableViewController.swift; sourceTree = "<group>"; };
+		C881D76B209AEF16001D7B6D /* PlanetTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanetTableViewController.xib; sourceTree = "<group>"; };
+		C881D76F209AEF96001D7B6D /* PlanetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +66,27 @@
 				C881D756209AE7EC001D7B6D /* Assets.xcassets */,
 				C881D758209AE7EC001D7B6D /* LaunchScreen.storyboard */,
 				C881D75B209AE7EC001D7B6D /* Info.plist */,
+				C881D76E209AEF56001D7B6D /* Data */,
+				C881D769209AEEDD001D7B6D /* List */,
 			);
 			path = Planets;
+			sourceTree = "<group>";
+		};
+		C881D769209AEEDD001D7B6D /* List */ = {
+			isa = PBXGroup;
+			children = (
+				C881D76A209AEF16001D7B6D /* PlanetTableViewController.swift */,
+				C881D76B209AEF16001D7B6D /* PlanetTableViewController.xib */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		C881D76E209AEF56001D7B6D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C881D76F209AEF96001D7B6D /* PlanetManager.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C881D75A209AE7EC001D7B6D /* LaunchScreen.storyboard in Resources */,
+				C881D76D209AEF16001D7B6D /* PlanetTableViewController.xib in Resources */,
 				C881D757209AE7EC001D7B6D /* Assets.xcassets in Resources */,
 				C881D755209AE7EB001D7B6D /* Main.storyboard in Resources */,
 			);
@@ -135,6 +161,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C881D76C209AEF16001D7B6D /* PlanetTableViewController.swift in Sources */,
+				C881D770209AEF96001D7B6D /* PlanetManager.swift in Sources */,
 				C881D762209AEAB9001D7B6D /* SceneManager.swift in Sources */,
 				C881D750209AE7EB001D7B6D /* AppDelegate.swift in Sources */,
 			);
